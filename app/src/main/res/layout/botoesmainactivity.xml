@@ -19,35 +19,46 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/bt_posts_view"
             android:padding="17dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Posts" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/bt_seguir"
+            android:padding="17dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Siga-nos" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/bt_videos"
+            android:padding="17dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Vídeos" />
 
         <Button
-            android:id="@+id/button10"
+            android:padding="17dp"
+            android:id="@+id/bt_cursos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Cursos disponíveis" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/bt_guias_de_estudo_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Guias de estudo" />
+
+        <Button
+            android:id="@+id/bt_compartilhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compartilhar" />
+
+
     </LinearLayout>
 
 </FrameLayout>
