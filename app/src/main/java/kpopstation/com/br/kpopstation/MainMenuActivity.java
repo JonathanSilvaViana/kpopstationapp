@@ -13,6 +13,8 @@ public class MainMenuActivity extends AppCompatActivity {
 
     Button posts;
 
+    Button social_views;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,18 @@ public class MainMenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent enviauseraposts = new Intent(MainMenuActivity.this, SemRedeActivity.class);
                 startActivity(enviauseraposts);
+            }
+        });
+
+        //encaminha para redes sociais
+
+        social_views = (Button)findViewById(R.id.bt_seguir);
+
+        social_views.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent vaiasredessociais = new Intent(MainMenuActivity.this, SeguirActivity.class);
+                startActivity(vaiasredessociais);
             }
         });
     }
