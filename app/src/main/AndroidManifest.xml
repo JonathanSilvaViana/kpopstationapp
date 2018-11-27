@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".MainMenuActivity" />
         <activity android:name=".EmailActivity" />
-        <activity android:name=".SemRedeActivity"></activity>
+        <activity android:name=".SemRedeActivity" />
+        <activity android:name=".SeguirActivity"></activity>
     </application>
 
 </manifest>
