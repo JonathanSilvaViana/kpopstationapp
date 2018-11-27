@@ -1,13 +1,31 @@
 package kpopstation.com.br.kpopstation;
 
+import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainMenuActivity extends AppCompatActivity {
+
+    FloatingActionButton bt_email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+
+        //encaminha usuário apra a página de e-mail
+        bt_email = (FloatingActionButton)findViewById(R.id.bt_EnviarEmail);
+
+        bt_email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent vaiparaemail = new Intent(MainMenuActivity.this, EmailActivity.class);
+                startActivity(vaiparaemail);
+            }
+        });
     }
+
 }
