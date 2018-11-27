@@ -18,4 +18,17 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="187dp"
         android:text="Sair por enquanto" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        app:srcCompat="@drawable/erro"
+        tools:srcCompat="@drawable/erro" />
 </RelativeLayout>
