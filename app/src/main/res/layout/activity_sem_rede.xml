@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SemRedeActivity">
+
+
+    <Button
+        android:id="@+id/bt_sair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="#fff"
+        android:textFontWeight="bold"
+        android:background="@drawable/botao_redondo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="187dp"
+        android:text="Sair por enquanto" />
+</RelativeLayout>
