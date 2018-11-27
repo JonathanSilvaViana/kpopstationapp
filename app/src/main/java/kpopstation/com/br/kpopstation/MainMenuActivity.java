@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainMenuActivity extends AppCompatActivity {
 
@@ -14,6 +15,10 @@ public class MainMenuActivity extends AppCompatActivity {
     Button posts;
 
     Button social_views;
+
+    Button compartilhar;
+
+    Button cursos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +58,35 @@ public class MainMenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent vaiasredessociais = new Intent(MainMenuActivity.this, SeguirActivity.class);
                 startActivity(vaiasredessociais);
+            }
+        });
+
+        //faz a ação de compartilhar a url de instalação para o app
+
+        compartilhar = (Button)findViewById(R.id.bt_compartilhar);
+
+        compartilhar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //avisa as pessoas
+                Toast.makeText(MainMenuActivity.this, "Disponível apenas para Android", Toast.LENGTH_LONG).show();
+                //faz a brincadeira
+                Intent intentCompartilhar = new Intent();
+                intentCompartilhar.setAction(Intent.ACTION_SEND);
+                intentCompartilhar.putExtra(Intent.EXTRA_TEXT, "Baixe o aplicativo do Kpopstation: play.google.com/br.com.kpopstation");
+                intentCompartilhar.setType("text/plain");
+                startActivity(intentCompartilhar);
+            }
+        });
+
+        //inicia a activity de cursos
+
+        cursos = (Button)findViewById(R.id.bt_cursos);
+
+        cursos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent enviaParaCursos = new Intent(MainMenuActivity.this , CursosActivity.class);
             }
         });
     }
