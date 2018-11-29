@@ -33,6 +33,13 @@
             android:text="Siga-nos" />
 
         <Button
+            android:id="@+id/bt_eventos"
+            android:padding="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eventos" />
+
+        <Button
             android:id="@+id/bt_videos"
             android:padding="17dp"
             android:layout_width="match_parent"
@@ -51,6 +58,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Guias de estudo" />
+
+        <Button
+            android:id="@+id/bt_player"
+            android:padding="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player" />
 
         <Button
             android:id="@+id/bt_compartilhar"

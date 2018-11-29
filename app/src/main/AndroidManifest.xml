@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kpopstation.com.br.kpopstation"
-    android:installLocation="auto"
-    >
+    android:installLocation="auto">
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -26,7 +25,11 @@
         <activity android:name=".EmailActivity" />
         <activity android:name=".SemRedeActivity" />
         <activity android:name=".SeguirActivity" />
-        <activity android:name=".CursosActivity"></activity>
+        <activity android:name=".CursosActivity" />
+        <activity android:name=".ListVideosActivity" />
+        <activity android:name=".PostsActivity" />
+        <activity android:name=".EventosActivity" />
+        <activity android:name=".PlayerActivity"></activity>
     </application>
 
 </manifest>

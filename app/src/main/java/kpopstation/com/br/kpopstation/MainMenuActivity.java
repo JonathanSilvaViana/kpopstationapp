@@ -20,6 +20,12 @@ public class MainMenuActivity extends AppCompatActivity {
 
     Button cursos;
 
+    Button videos;
+
+    Button eventos;
+
+    Button player;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +50,7 @@ public class MainMenuActivity extends AppCompatActivity {
         posts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent enviauseraposts = new Intent(MainMenuActivity.this, SemRedeActivity.class);
+                Intent enviauseraposts = new Intent(MainMenuActivity.this, PostsActivity.class);
                 startActivity(enviauseraposts);
             }
         });
@@ -87,8 +93,40 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent enviaParaCursos = new Intent(MainMenuActivity.this , CursosActivity.class);
+                startActivity(enviaParaCursos);
             }
         });
+
+        videos = (Button)findViewById(R.id.bt_videos);
+
+        videos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent enviaParaVideos = new Intent(MainMenuActivity.this , ListVideosActivity.class);
+                startActivity(enviaParaVideos);
+            }
+        });
+
+        eventos = (Button)findViewById(R.id.bt_eventos);
+
+        eventos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent passaparaeventos = new Intent(MainMenuActivity.this, EventosActivity.class);
+                startActivity(passaparaeventos);
+            }
+        });
+
+        player = (Button)findViewById(R.id.bt_player);
+
+        player.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent passaparaplayer = new Intent(MainMenuActivity.this, PlayerActivity.class);
+                startActivity(passaparaplayer);
+            }
+        });
+
     }
 
 }

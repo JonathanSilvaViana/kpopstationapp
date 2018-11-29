@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class CursosActivity extends AppCompatActivity {
+public class ListVideosActivity extends AppCompatActivity {
 
     FloatingActionButton VoltarView;
 
@@ -14,10 +14,10 @@ public class CursosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cursos);
+        setContentView(R.layout.activity_list_videos);
 
-        //define o titulo da activity
-        titulo = "Cursos";
+        titulo = "Videos";
+
         setTitle(titulo);
 
         //chama o evento de voltar para o botão flutuante de voltar
@@ -29,7 +29,6 @@ public class CursosActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
     }
-
-
 }

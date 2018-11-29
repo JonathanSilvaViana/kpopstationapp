@@ -1,5 +1,6 @@
 package kpopstation.com.br.kpopstation;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -8,7 +9,14 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 
+
+
 public class SeguirActivity extends AppCompatActivity {
+
+    FloatingActionButton VoltarView;
+
+    String titulo;
+
 
     Button bt_fb;
     Button bt_is;
@@ -27,6 +35,12 @@ public class SeguirActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seguir);
+
+        //nomeia a activity
+
+        titulo = "Siga o KPOPSTATION";
+
+        setTitle(titulo);
 
         //declara web view
         webView = (WebView)findViewById(R.id.webViewSocial);
@@ -74,7 +88,23 @@ public class SeguirActivity extends AppCompatActivity {
                 webView.loadUrl(tw_url);
             }
         });
+
+
+        //chama o evento de voltar para o botão flutuante de voltar
+        VoltarView = (FloatingActionButton)findViewById(R.id.btVoltarAntes);
+
+        VoltarView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+
     }
+
+
+
 
     //helpful https://stackoverflow.com/questions/29752095/how-to-open-a-url-in-webview-on-new-screen-based-on-button-click
 

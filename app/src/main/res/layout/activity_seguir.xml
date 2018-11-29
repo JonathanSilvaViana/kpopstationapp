@@ -10,6 +10,8 @@
         layout="@layout/bt_social_view_buttons"
         />
 
+
+
     <WebView
         android:id="@+id/webViewSocial"
         android:layout_width="match_parent"
@@ -17,5 +19,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="227dp" />
+
+    <include
+        layout="@layout/bt_voltar_views"
+        />
 
 </RelativeLayout>

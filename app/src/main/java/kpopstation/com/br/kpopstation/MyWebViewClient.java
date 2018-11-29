@@ -12,7 +12,7 @@ public class MyWebViewClient extends WebViewClient {
 
     public MyWebViewClient(Activity activity) {
         this.activity = activity;
-    }
+    }/*
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView webView, String url) {
@@ -21,5 +21,5 @@ public class MyWebViewClient extends WebViewClient {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         //activity.startActivity(intent);
         return true;
-    }
+    }*/
 }

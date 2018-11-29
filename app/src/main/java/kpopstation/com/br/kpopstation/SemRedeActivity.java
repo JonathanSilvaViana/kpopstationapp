@@ -15,10 +15,16 @@ public class SemRedeActivity extends AppCompatActivity {
     Button sair_do_app;
     String semrede;
 
+    String titulo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sem_rede);
+
+        titulo = "Dispositivo sem rede";
+
+        setTitle(titulo);
 
 
         //aviso que está sem rede
